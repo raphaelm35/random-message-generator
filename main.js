@@ -5,7 +5,7 @@ const monthMessage = ['loves', 'eradicate', 'invented', 'codes', 'dine with', 'e
 const decadeMessage = ['turtles', 'seals', 'codecademy', 'kinden garden drawings', 'Ninja Turtles', 'alcohol', 'bitcoin', 'triple jalapenos pizza'];
 
 // creating the function that makes the random message
-const RandomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
+const randomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
 // creating the variables that will "stock" the message
     let returnedDayMessage = "";
     let returnedMonthMessage = "";
@@ -119,4 +119,4 @@ const RandomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
     }
 };
 
-RandomMessage(18, 01, 2025);
+randomMessage(18, 01, 2025);

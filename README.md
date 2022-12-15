@@ -1,6 +1,6 @@
 # Mixed-Messages
 
-# Create a random message generator program#
+# Create a random message generator program #
 
 This projet, from the codecademy course “Full-Stack Engineer”, aims to give the user a random message depending on it's birhday (DD/MM/YYYY). At the moment you just need to insert your birthday at the bottom of the page function "randomMessage" to get your customised random message.
 

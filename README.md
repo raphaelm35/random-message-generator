@@ -2,7 +2,11 @@
 
 # Create a random message generator program #
 
-This projet, from the codecademy course “Full-Stack Engineer”, aims to give the user a random message depending on it's birhday (DD/MM/YYYY). At the moment you just need to insert your birthday at the bottom of the page function "randomMessage" to get your customised random message.
+This projet, from the codecademy course “Full-Stack Engineer”, aims to give the user a random message depending on it's birhday (DD/MM/YYYY). 
+
+I wanted to create a project with some kind of user interaction where each could receive their own random message.
+
+At the moment you just need to insert your birthday at the bottom of the page function "randomMessage" to get your customised random message.
 
 Technilly made the use of functions, for loop, arrays, switch keyword, struggled to create a nested function
 

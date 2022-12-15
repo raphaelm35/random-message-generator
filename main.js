@@ -1,13 +1,18 @@
 //#region 
+// creating arrays to contain each a part of the final message
 const dayMessage = ['aliens', 'santa', 'your future grand-child', 'your brother', 'your 10th spouse', 'everyone except you', 'nobody', 'The Flying Spaghetti Monster', 'your neighbor', 'your boss', 'the pizza delverymanguy'];
 const monthMessage = ['loves', 'eradicate', 'invented', 'codes', 'dine with', 'eat', 'wake up', 'drink', 'makes joke about', 'think about', 'party with', 'is looking for'];
 const decadeMessage = ['turtles', 'seals', 'codecademy', 'kinden garden drawings', 'Ninja Turtles', 'alcohol', 'bitcoin', 'triple jalapenos pizza'];
 
+// creating the function that makes the random message
 const RandomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
+// creating the variables that will "stock" the message
     let returnedDayMessage = "";
     let returnedMonthMessage = "";
     let returnedDecadeMessage = "";
+    //making sure that the dates given by user is in our scope
     if (dayOfBirth > 0 && dayOfBirth < 31 && monthOfBirth > 0 && monthOfBirth < 13 && decadeOfBirth > 1940 && decadeOfBirth < 2023){
+        // detemining the random message for the day by picking up a string in the "dayMessage" array depending on the user date of birth
                 for (i = 0; i < 31; i++) {
                     if (dayOfBirth < 3) {
                         returnedDayMessage = dayMessage[0];
@@ -33,6 +38,7 @@ const RandomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
                         returnedDayMessage = dayMessage[10];
                     };
                 };
+        // same for the month (using switch because cleaner)
                 switch (monthOfBirth) {
                     case 1:
                         returnedMonthMessage = monthMessage[0];
@@ -71,6 +77,7 @@ const RandomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
                         returnedMonthMessage = monthMessage[11];
                         break;
                 };
+        // same with decade of birth
                 for (j = 0; j < decadeMessage.length; j++) {
                     if (decadeOfBirth < 1949) {
                         returnedDecadeMessage = decadeMessage[0];
@@ -97,6 +104,7 @@ const RandomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
                 };
             };
             console.log(`The undeniable truth is that ${returnedDayMessage} ${returnedMonthMessage} ${returnedDecadeMessage}`);
+    // pushing messages to make sure that the user gives appropriate date
     } else if (dayOfBirth <= 0 || dayOfBirth > 31) {
         console.log("Please return valid date of birth")
     } else if (monthOfBirth <= 0 || monthOfBirth >= 13) {
@@ -104,6 +112,7 @@ const RandomMessage = (dayOfBirth, monthOfBirth, decadeOfBirth) => {
     } else if (decadeOfBirth < 1940) {
         console.log("Please return valid decade of birth")
     } else if (decadeOfBirth > 2024) {
+    // just want to be thankfull for anyone coming from the future
         console.log("You are from the future ! Thank you for reading my code !") 
     } else {
         console.log("Please return valid dates")
